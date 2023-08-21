@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+div#colorDisplay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#colorCode,
+div#hexCode,
+div#rgbCode,
+div#shadeIcon,
+div#returnIcon {
+    position: fixed;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    z-index: 10;
+}
+
+div#colorCode {
+    left: 10px;
+    bottom: 10px;
+}
+
+div#hexCode {
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+div#rgbCode {
+    right: 10px;
+    bottom: 10px;
+}
+
+div#shadeIcon {
+    left: 10%;
+    top: 10%;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+div#returnIcon {
+    right: 10%;
+    top: 10%;
+    background-color: transparent;
+    font-size: 50px;
+}
+
+div#shadeOfShadeMode {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadeBox {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
